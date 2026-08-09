@@ -1,6 +1,6 @@
 """
 Simple School Management System
---------------------------------
+
 Lets you:
   - Add students
   - Add teachers
