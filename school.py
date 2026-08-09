@@ -16,3 +16,13 @@ class Person:
     def __init__(self, person_id, name):
         self.id = person_id
         self.name = name
+
+
+class Student(Person):
+    def __init__(self, person_id, name):
+        super().__init__(person_id, name)
+        self.classes = []  # list of class names the student is enrolled in
+
+    def __str__(self):
+        classes = ", ".join(self.classes) if self.classes else "None"
+        return f"[{self.id}] {self.name} - Enrolled in: {classes}"
