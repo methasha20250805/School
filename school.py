@@ -26,3 +26,13 @@ class Student(Person):
     def __str__(self):
         classes = ", ".join(self.classes) if self.classes else "None"
         return f"[{self.id}] {self.name} - Enrolled in: {classes}"
+
+
+class Teacher(Person):
+    def __init__(self, person_id, name):
+        super().__init__(person_id, name)
+        self.classes = []  # list of class names the teacher teaches
+
+    def __str__(self):
+        classes = ", ".join(self.classes) if self.classes else "None"
+        return f"[{self.id}] {self.name} - Teaches: {classes}"
