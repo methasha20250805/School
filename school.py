@@ -48,3 +48,11 @@ class ClassRoom:
         teacher_name = self.teacher.name if self.teacher else "No teacher assigned"
         student_names = ", ".join(s.name for s in self.students) if self.students else "No students"
         return f"Class '{self.name}' | Teacher: {teacher_name} | Students: {student_names}"
+
+class School:
+    def __init__(self):
+        self.students = {}   # id -> Student
+        self.teachers = {}   # id -> Teacher
+        self.classes = {}    # name -> ClassRoom
+        self._next_student_id = 1
+        self._next_teacher_id = 1
