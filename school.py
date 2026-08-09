@@ -36,3 +36,15 @@ class Teacher(Person):
     def __str__(self):
         classes = ", ".join(self.classes) if self.classes else "None"
         return f"[{self.id}] {self.name} - Teaches: {classes}"
+
+
+class ClassRoom:
+    def __init__(self, name):
+        self.name = name
+        self.teacher = None  # Teacher object or None
+        self.students = []  # list of Student objects
+
+    def __str__(self):
+        teacher_name = self.teacher.name if self.teacher else "No teacher assigned"
+        student_names = ", ".join(s.name for s in self.students) if self.students else "No students"
+        return f"Class '{self.name}' | Teacher: {teacher_name} | Students: {student_names}"
