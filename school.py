@@ -81,3 +81,15 @@ class School:
     def assign_teacher_to_class(self, teacher_id, class_name):
         teacher = self.teachers.get(teacher_id)
         classroom = self.classes.get(class_name)
+
+        if not teacher:
+            print(f"No teacher found with ID {teacher_id}")
+            return
+        if not classroom:
+            print(f"No class found named '{class_name}'")
+            return
+
+        classroom.teacher = teacher
+        if class_name not in teacher.classes:
+            teacher.classes.append(class_name)
+        print(f"Assigned {teacher.name} to teach '{class_name}'")
