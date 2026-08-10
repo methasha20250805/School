@@ -69,3 +69,15 @@ class School:
         self._next_teacher_id += 1
         self.teachers[teacher_id] = Teacher(teacher_id, name)
         print(f"Added teacher '{name}' with ID {teacher_id}")
+
+    # ---------- Classes ----------
+    def add_class(self, class_name):
+        if class_name in self.classes:
+            print(f"Class '{class_name}' already exists.")
+            return
+        self.classes[class_name] = ClassRoom(class_name)
+        print(f"Created class '{class_name}'")
+
+    def assign_teacher_to_class(self, teacher_id, class_name):
+        teacher = self.teachers.get(teacher_id)
+        classroom = self.classes.get(class_name)
