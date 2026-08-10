@@ -56,3 +56,16 @@ class School:
         self.classes = {}    # name -> ClassRoom
         self._next_student_id = 1
         self._next_teacher_id = 1
+
+    # ---------- Add people ----------
+    def add_student(self, name):
+        student_id = f"S{self._next_student_id}"
+        self._next_student_id += 1
+        self.students[student_id] = Student(student_id, name)
+        print(f"Added student '{name}' with ID {student_id}")
+
+    def add_teacher(self, name):
+        teacher_id = f"T{self._next_teacher_id}"
+        self._next_teacher_id += 1
+        self.teachers[teacher_id] = Teacher(teacher_id, name)
+        print(f"Added teacher '{name}' with ID {teacher_id}")
