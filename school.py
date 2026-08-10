@@ -93,3 +93,20 @@ class School:
         if class_name not in teacher.classes:
             teacher.classes.append(class_name)
         print(f"Assigned {teacher.name} to teach '{class_name}'")
+
+    def enroll_student_in_class(self, student_id, class_name):
+        student = self.students.get(student_id)
+        classroom = self.classes.get(class_name)
+
+        if not student:
+            print(f"No student found with ID {student_id}")
+            return
+        if not classroom:
+            print(f"No class found named '{class_name}'")
+            return
+
+        if student not in classroom.students:
+            classroom.students.append(student)
+        if class_name not in student.classes:
+            student.classes.append(class_name)
+        print(f"Enrolled {student.name} in '{class_name}'")
