@@ -153,3 +153,15 @@ def main():
 
     while True:
         choice = input(MENU).strip()
+
+        if choice == "1":
+            name = input("Student name: ").strip()
+            school.add_student(name)
+
+        elif choice == "2":
+            name = input("Teacher name: ").strip()
+            school.add_teacher(name)
+
+        elif choice == "3":
+            name = input("Class name: ").strip()
+            school.add_class(name)
