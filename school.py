@@ -165,3 +165,10 @@ def main():
         elif choice == "3":
             name = input("Class name: ").strip()
             school.add_class(name)
+
+        elif choice == "4":
+            school.list_teachers()
+            teacher_id = input("Teacher ID: ").strip()
+            school.list_classes()
+            class_name = input("Class name: ").strip()
+            school.assign_teacher_to_class(teacher_id, class_name)
