@@ -179,3 +179,19 @@ def main():
             school.list_classes()
             class_name = input("Class name: ").strip()
             school.enroll_student_in_class(student_id, class_name)
+
+        elif choice == "6":
+            school.list_students()
+
+        elif choice == "7":
+            school.list_teachers()
+
+        elif choice == "8":
+            school.list_classes()
+
+        elif choice == "9":
+            print("Goodbye!")
+            break
+
+        else:
+            print("Invalid option, try again.")
