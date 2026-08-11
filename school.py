@@ -130,3 +130,19 @@ class School:
             print("No classes yet.")
         for c in self.classes.values():
             print(c)
+
+    # ---------------- CLI ----------------
+
+
+MENU = """
+  ==== School Management System ====
+  1. Add student
+  2. Add teacher
+  3. Add class
+  4. Assign teacher to class
+  5. Enroll student in class
+  6. View students
+  7. View teachers
+  8. View classes
+  9. Exit
+  Choose an option (1-9): """
