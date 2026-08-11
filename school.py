@@ -146,3 +146,10 @@ MENU = """
   8. View classes
   9. Exit
   Choose an option (1-9): """
+
+
+def main():
+    school = School()
+
+    while True:
+        choice = input(MENU).strip()
