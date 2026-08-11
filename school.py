@@ -124,3 +124,9 @@ class School:
             print("No teachers yet.")
         for t in self.teachers.values():
             print(t)
+
+    def list_classes(self):
+        if not self.classes:
+            print("No classes yet.")
+        for c in self.classes.values():
+            print(c)
