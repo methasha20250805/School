@@ -110,3 +110,17 @@ class School:
         if class_name not in student.classes:
             student.classes.append(class_name)
         print(f"Enrolled {student.name} in '{class_name}'")
+
+        # ---------- Viewing ----------
+
+    def list_students(self):
+        if not self.students:
+            print("No students yet.")
+        for s in self.students.values():
+            print(s)
+
+    def list_teachers(self):
+        if not self.teachers:
+            print("No teachers yet.")
+        for t in self.teachers.values():
+            print(t)
