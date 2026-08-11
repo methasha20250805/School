@@ -172,3 +172,10 @@ def main():
             school.list_classes()
             class_name = input("Class name: ").strip()
             school.assign_teacher_to_class(teacher_id, class_name)
+
+        elif choice == "5":
+            school.list_students()
+            student_id = input("Student ID: ").strip()
+            school.list_classes()
+            class_name = input("Class name: ").strip()
+            school.enroll_student_in_class(student_id, class_name)
