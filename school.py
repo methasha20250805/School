@@ -1,9 +1,9 @@
 
-Simple School Management System
+#Simple School Management System
 
-Lets you:
-  - Add students
-  - Add teachers
+#Lets you:
+# - Add students
+#  - Add teachers
   - Create classes (subjects)
   - Assign a teacher to a class
   - Enroll a student in a class
