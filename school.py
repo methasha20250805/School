@@ -1,7 +1,5 @@
 
-#Simple School Management System
-
-#Lets you:
+# Simple School Management System
 # - Add students
 #  - Add teachers
 #  - Create classes (subjects)
