@@ -52,7 +52,7 @@ class School:
         self._next_student_id = 1
         self._next_teacher_id = 1
 
-    # ---------- Add people ----------
+    # Add people
     def add_student(self, name):
         student_id = f"S{self._next_student_id}"
         self._next_student_id += 1
