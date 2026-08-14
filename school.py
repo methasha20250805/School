@@ -126,7 +126,7 @@ class School:
         for c in self.classes.values():
             print(c)
 
-    # ---------------- CLI ----------------
+    #  CLI
 
 
 MENU = """
