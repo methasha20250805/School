@@ -65,7 +65,7 @@ class School:
         self.teachers[teacher_id] = Teacher(teacher_id, name)
         print(f"Added teacher '{name}' with ID {teacher_id}")
 
-    # ---------- Classes ----------
+    # Classes
     def add_class(self, class_name):
         if class_name in self.classes:
             print(f"Class '{class_name}' already exists.")
