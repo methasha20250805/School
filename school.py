@@ -106,7 +106,7 @@ class School:
             student.classes.append(class_name)
         print(f"Enrolled {student.name} in '{class_name}'")
 
-        # ---------- Viewing ----------
+ # Viewing
 
     def list_students(self):
         if not self.students:
