@@ -130,7 +130,7 @@ class School:
 
 
 MENU = """
-  ==== School Management System ====
+School Management System
   1. Add student
   2. Add teacher
   3. Add class
