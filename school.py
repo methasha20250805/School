@@ -1,7 +1,7 @@
 
 # Simple School Management System
 #  You can Add students
-#  Add teachers
+#  You can Add teachers
 #  Create classes (subjects)
 #  Assign a teacher to a class
 #  Enroll a student in a class
