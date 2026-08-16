@@ -30,7 +30,7 @@ class Teacher(Person):
 
     def __str__(self):
         classes = ", ".join(self.classes) if self.classes else "None"
-        return f"[{self.id}] {self.name} - Teaches: {classes}"
+        return f"[{self.id}] {self.name} - Teaches : {classes}"
 
 
 class ClassRoom:
