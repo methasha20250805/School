@@ -139,8 +139,8 @@ School Management System
     6. View students
     7. View teachers
     8. View classes
-    9. Exit
-  Choose an option (1-9): """
+    0. Exit
+Choose an option (1 - 0) :  """
 
 
 def main():
