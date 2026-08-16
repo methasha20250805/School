@@ -78,7 +78,7 @@ class School:
         classroom = self.classes.get(class_name)
 
         if not teacher:
-            print(f"No teacher found with ID {teacher_id}")
+            print(f"No teacher found with the ID:  {teacher_id}")
             return
         if not classroom:
             print(f"No class found named '{class_name}'")
