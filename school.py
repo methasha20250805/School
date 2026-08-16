@@ -185,7 +185,7 @@ def main():
             school.list_classes()
 
         elif choice == "0":
-            print("Goodbye!")
+            print("Goodbye, Thank you for using the School Management System! ")
             break
 
         else:
