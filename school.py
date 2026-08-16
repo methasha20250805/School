@@ -184,7 +184,7 @@ def main():
         elif choice == "8":
             school.list_classes()
 
-        elif choice == "9":
+        elif choice == "0":
             print("Goodbye!")
             break
 
