@@ -20,7 +20,7 @@ class Student(Person):
 
     def __str__(self):
         classes = ", ".join(self.classes) if self.classes else "None"
-        return f"[{self.id}] {self.name} - Enrolled in: {classes}"
+        return f"[{self.id}] {self.name} - Enrolled in : {classes}"
 
 
 class Teacher(Person):
