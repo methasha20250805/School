@@ -135,11 +135,11 @@ School Management System
     2. Add teacher
     3. Add class
     4. Assign teacher to class
-  5. Enroll student in class
-  6. View students
-  7. View teachers
-  8. View classes
-  9. Exit
+    5. Enroll student in class
+    6. View students
+    7. View teachers
+    8. View classes
+    9. Exit
   Choose an option (1-9): """
 
 
